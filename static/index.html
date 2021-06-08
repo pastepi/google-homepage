@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="main-header">
+  <header class="header">
     <nav class="navbar">
       <ul>
         <div id="navbar-text-items">
           <li>Gmail</li>
-          <li>Grafika</li>
+          <li>Images</li>
         </div>
         <div id="navbar-icon-items">
           <li>(App)</li>
@@ -23,9 +23,35 @@
     </nav>
   </header>
   <main>
-    <section id="main-logo">
+    <section id="main-section-logo">
       <img id="google-logo" alt="Google" src="images/googlelogo_color_272x92dp.png">
     </section>
+    <section id="main-section-form">
+      <form id="form-searchbar" action="">
+        <input type="text" id="searchbar">
+      </form>
+      <div id="buttons-container">
+        <button type="submit">Google Search</button>
+        <button type="submit">I'm Feeling Lucky</button>
+      </div>
+    </section>
+    <p id="translate-offer">Google offered in: <a href="#">polski</a></p>
   </main>
+  <footer>
+    <p>Poland</p>
+    <div id="footer-container-links">
+      <ul class="footer-list" id="footer-list-left">
+        <li>About</li>
+        <li>Advertising</li>
+        <li>Business</li>
+        <li>How Search works</li>
+      </ul>
+      <ul class="footer-list" id="footer-list-right">
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
