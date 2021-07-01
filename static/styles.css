@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+a:visited {
+    color: inherit;
+}
+
 /* Navbar styles */
 
 .navbar > ul {
@@ -50,15 +54,22 @@ body {
     text-decoration: underline;
 }
 
-#svg-container {
+#img-container {
     width: 40px;
     height: 40px;
-    padding: 7px;
+    padding: 5px;
 }
 
-#svg-container:hover {
+#img-container:hover {
     background-color: rgba(60,64,67,0.08);
     border-radius: 50%;
+}
+
+.navbar-profile-pic {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #3c4043;
 }
 
 svg {
@@ -77,7 +88,7 @@ main {
 }
 
 #main-section-logo {
-    height: 20vh;
+    height: 30vh;
     display: flex;
     align-items: flex-end;
     flex-shrink: 0;
@@ -89,23 +100,74 @@ main {
     align-items: center;
     padding: 20px;
     max-height: 160px;
-    flex-shrink: 0;
-    
 }
 
 #searchbar {
     display: flex;
     height: 44px;
-    border: 1px solid #dfe1e5;
-    border-radius: 27px;
-    flex-grow: 1;
+    border: none;
+    width: 600px;
+    max-width: 80vw;
+    font-size: 1.1rem;
+    
+    outline-style: none;
 }
 
+#form-searchbar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 27px;
+    padding: 3px 10px 2px 16px;
+}
 
+.google-search-icon {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
 
+.google-mic-icon {
+    margin: 8px;
+    width: 24px;
+    height: 24px;
+}
 
+#buttons-container {
+    margin: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.form-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
+.form-button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
+#translate-offer {
+    font-size: 0.8rem;
+}
 
 /* Footer styles */
 
@@ -118,14 +180,12 @@ footer {
     left: 0;
     background: #f2f2f2;
     color: rgba(0,0,0,.54);
-
 }
 
 #footer-container-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 footer > p {
@@ -146,3 +206,15 @@ footer > p {
     margin: 0;
     padding: 0 20px;
 }
+
+.footer-link {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+
